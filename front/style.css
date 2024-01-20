@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: #F3F3F3;
+    overflow-x: hidden;
+  }
+
+  .grid-s{
+    display: flex;
+  }
+  .hidden{
+    display: none;
+  }
+  .btn {
+    font-size: inherit;
+    background-color: hsl(30, 100%, 50%);
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: .2em;
+    color: #333;
+  }
+  .btn.tbl{
+    display: none;
+  }
+
+  .container-tbl {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .grid {
+    margin: 2vmin;
+    display: grid;
+    background-color: hsl(230, 100%, 60%);
+    grid-template-rows: repeat(10, 5vmin);
+    grid-template-columns: repeat(10, 5vmin);
+  }
+  .ship {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vmin;
+    height: calc(5vmin * var(--height, 1));
+    background-color: grey;
+  }
+  .ship-1 {
+    width: 5vmin;
+  }
+
+  .ship-2 {
+    width: calc(5vmin * 2);
+  }
+  .ship-3 {
+    width: calc(5vmin * 3);
+  }
+  .ship-4 {
+    width: calc(5vmin * 4);
+  }
+  .ship-5 {
+    width: calc(5vmin * 5);
+  }
+  .grid div {
+    border: 1px solid hsla(0, 0%, 100%, .2);
+  }
+
+  .container-ships{
+    height: calc(5vmin*6);
+    align-items: center;
+  }
+  .taken {
+    background-color: gray;
+  }
+
+
+.hit{
+  background-color: red;
+}
+
+.miss{
+  background-color: white;
+}
+.table{
+  width : fit-content;
+  border : 1px solid black;
+}

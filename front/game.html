@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr">
+    <head>
+        <title>Battleship</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container" id="turn"></div>
+        <div class="container-tbl">
+            <button id="tablebtn" class="btn">show table</button>
+            <div class="conteiner hidden" id="hidden-box">
+                <table class="table" id ="table">
+                    <tr class="table">
+                    <th class="table">№</th>
+                    <th class="table">Date</th>
+                    <th class="table">Time</th>
+                    <th class="table">Duration</th>
+                    <th class="table">Outcome</th>
+                    </tr>
+                    <tbody id = "tblid">
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div class="container" id="grid-diplay">
+            <div class="container-tbl" style="display: flex;">
+                <div>Your grid</div>
+                <div class="grid grid-player"></div>
+            </div>
+            <div class="container-tbl" style="display: flex;">
+                <div>enemy grid</div>
+                <div class="grid grid-enemy"></div>
+            </div>
+
+        </div>
+        <div class="container">
+                <div id="1" class="ship ship-1" draggable="true"></div>
+                <div id="2" class="ship ship-2" draggable="true"></div>
+                <div id="3" class="ship ship-3" draggable="true"></div>
+                <div id="4" class="ship ship-4" draggable="true"></div>
+                <div id="5" class="ship ship-5" draggable="true"></div>
+            </div>
+            <div class="container setup-buttons">
+                <button id="flip" class="btn">flip</button>
+                <button id="start" class="btn">start game</button>
+            </div>
+    </body>
+</html>
